@@ -16,8 +16,13 @@ function changeClicked(item) {
     if (isClicked) {
         return;
     } else {
+        const audio = item.querySelector("audio");
         item.classList.add("item__clicked");
-        item.querySelector("audio").play();
+
+        audio.pause();
+        audio.currentTime = 0;
+        audio.play();
+
         setTimeout(() => {
             item.classList.remove("item__clicked");
         }, 123);
