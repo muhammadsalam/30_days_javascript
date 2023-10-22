@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #141414;
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.title {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.window_icon-button {
+    background-color: transparent;
+    border: 0;
+}
+
+.window_icon {
+    width: 16px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.options {
+    flex: 1;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: flex-start;
+    max-width: 200px;
+}
+
+.item_range {
+    width: 100%;
+}

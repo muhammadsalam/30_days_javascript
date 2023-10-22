@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="assets/index.css" />
+
+        <title>2 day | Random Password Generator</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="title">Random Password Generator</h1>
+            <div class="block">
+                <label class="window">
+                    <input class="window_input" type="text" id="passInput" />
+                    <button class="window_icon-button" id="passRegenerate">
+                        <img
+                            class="window_icon"
+                            src="./assets/icons/reload.svg"
+                            alt="regenerate"
+                        />
+                    </button>
+                </label>
+                <div class="options">
+                    <label class="item">
+                        <strong class="item_title">
+                            length
+                            <span id="passLengthText">6</span>
+                        </strong>
+                        <input
+                            class="item_range"
+                            type="range"
+                            min="4"
+                            max="25"
+                            value="6"
+                            id="passLength"
+                        />
+                    </label>
+                    <label class="item">
+                        <strong class="item_title">numbers</strong>
+                        <input type="checkbox" checked id="checkNumbers" />
+                    </label>
+                    <label class="item">
+                        <strong class="item_title">lowercase</strong>
+                        <input type="checkbox" checked id="checkLowercase" />
+                    </label>
+                    <label class="item">
+                        <strong class="item_title">uppercase</strong>
+                        <input type="checkbox" checked id="checkUppercase" />
+                    </label>
+                    <label class="item">
+                        <strong class="item_title">symbols</strong>
+                        <input type="checkbox" checked id="checkSymbols" />
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/index.js"></script>
+    </body>
+</html>
